@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 20160222205615) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
-    t.integer  "uid",        limit: 8
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.integer  "uid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
