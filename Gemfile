@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
@@ -43,5 +45,7 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'pry-rails'
+  gem 'learn-co'
 end
 
