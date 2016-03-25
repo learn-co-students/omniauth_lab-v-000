@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#home'
+  get '/auth/:provider/callback', to: 'sessions#create'
+  post '/sessions', to: 'sessions#create', as: 'sessions'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
