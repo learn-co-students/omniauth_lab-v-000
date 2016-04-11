@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
   root 'welcome#home'
+
+  get '/auth/:provider/callback' => 'sessions#create'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
