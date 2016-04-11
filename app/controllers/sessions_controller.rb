@@ -3,13 +3,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user=User.find_or_create_by(uid: user_hash['id'])
+    @user=User.first_or_create(uid: user_hash['id'])
     @user.email = user_info["email"]
     @user.name = user_info["name"]
     @user.save
-    session[:id]=@user.id
+    session[:user_id]=@user.id
+byebug
     render "authenticated"
-
+  
   end
 
   def destroy
