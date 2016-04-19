@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :users
+  get 'sessions/create'
+
+  get 'sessions/auth'
+
   root 'welcome#home'
 
   
