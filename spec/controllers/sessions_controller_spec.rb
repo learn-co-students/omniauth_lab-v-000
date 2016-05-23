@@ -55,6 +55,7 @@ RSpec.describe SessionsController, type: :controller do
       get :create
       create_user = User.first
       expect(create_user.name).to eq(name)
+
     end
   end
 end
