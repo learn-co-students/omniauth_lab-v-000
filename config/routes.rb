@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root 'welcome#home'
 
+  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/', to: "welcome#home"
+  resources :sessions, only: [:create]
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
