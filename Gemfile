@@ -37,11 +37,17 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
 
+  gem 'tzinfo-data', platform: [:mingw, :mswin, :x64_mingw]
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'omniauth'
+  gem 'omniauth-facebook'
+  gem 'pry'
+ 
 end
+
+  gem 'web-console', '~> 2.0', group: :development
 
