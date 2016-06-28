@@ -1,12 +1,9 @@
 class SessionsController < ApplicationController
   def create
-   @user = User.find_or_create_by(uid: auth_hash['uid']) do |user|
-      user.name = auth_hash['info']['name']
-      user.password = SecureRandom.hex
-      user.email = auth_hash['info']['email']
+    user = User.find_or_create_by(:uid => auth['uid']) do |user|
+      user.name = auth['info']['name']
     end
-    session[:user_id] = @user.id
-    redirect_to '/'
+    session[:user_id] = user.try(:id)
   end
 
   private
