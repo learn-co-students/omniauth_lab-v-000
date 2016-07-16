@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
+  get 'user/create'
+
+  get 'session/create'
+
   root 'welcome#home'
+
+  get 'users/create'
+
+  get 'sessions/create'
+
+  get 'auth/:provider/callback', to: 'sessions#create'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
