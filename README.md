@@ -21,3 +21,6 @@ There is already a view that outputs all the authenticaton data, as well as show
 [facebook_dev]: https://developers.facebook.com
 [facebook_info_fields]: https://developers.facebook.com/docs/graph-api/reference/user/
 <p class='util--hide'>View <a href='https://learn.co/lessons/omniauth_lab'>Omniauth Lab</a> on Learn.co and start learning to code for free.</p>
+
+FACEBOOK_KEY '618623501632924' 
+FACEBOOK_SECRET '08d11fd8b0732c68a03ee65c312a2965'
