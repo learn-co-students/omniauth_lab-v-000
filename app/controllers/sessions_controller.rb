@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     end
     if user.save
       session[:user_id] = user.id
-      redirect_to '/'
+      @auth = auth
     else
       redirect_to '/'
     end
