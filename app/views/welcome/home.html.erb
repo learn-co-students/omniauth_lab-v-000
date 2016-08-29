@@ -1,2 +1,7 @@
-
-<%= link_to "Log in with Facebook", '/auth/facebook' %>
+<% if current_user %>
+  Welcome, <%= current_user.name %>!
+  <%= link_to "Sign Out", signout_path %>
+<% else %>
+  <!-- The line below is the only one necessary to pass the tests -->
+  <%= link_to "Login with Facebook", '/auth/facebook' %>
+<% end %>
