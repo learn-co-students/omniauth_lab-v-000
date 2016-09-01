@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # Add your routes here
+
+  root 'welcome#home'
+  resources :sessions
+  get '/auth/facebook/callback', to: 'sessions#create'
 end
