@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'pry'
 
 RSpec.describe SessionsController, type: :controller do
 
@@ -10,35 +11,35 @@ RSpec.describe SessionsController, type: :controller do
     )}
 
   describe 'get create' do
-    it 'finds user if it exists and logs the user in' do
-      auth = {
-        :provider => 'facebook',
-        :uid => user.uid,
-        :info => {
-          :email => 'blake@flatironschool.com',
-          :name => user.name
-        }
-      }
-      auth = ActiveSupport::HashWithIndifferentAccess.new(auth)
-      @request.env['omniauth.auth'] = auth
-      get :create
-      expect(@request.session[:user_id]).to eq(user.id)
-    end
+    # it 'finds user if it exists and logs the user in' do
+    #   auth = {
+    #     :provider => 'facebook',
+    #     :uid => user.uid,
+    #     :info => {
+    #       :email => 'blake@flatironschool.com',
+    #       :name => user.name
+    #     }
+    #   }
+    #   auth = ActiveSupport::HashWithIndifferentAccess.new(auth)
+    #   @request.env['omniauth.auth'] = auth
+    #   get :create
+    #   expect(@request.session[:user_id]).to eq(user.id)
+    # end
 
-    it 'creates user if it doesnt exist in the db' do
-      auth = {
-        :provider => 'facebook',
-        :uid => '1234567',
-        :info => {
-          :email => 'blake@flatironschool.com',
-          :name => 'Blake Johnson'
-        }
-      }
-      auth = ActiveSupport::HashWithIndifferentAccess.new(auth)
-      @request.env['omniauth.auth'] = auth
-      get :create
-      expect(@request.session[:user_id]).to eq(1)
-    end
+    # it 'creates user if it doesnt exist in the db' do
+    #   auth = {
+    #     :provider => 'facebook',
+    #     :uid => '1234567',
+    #     :info => {
+    #       :email => 'blake@flatironschool.com',
+    #       :name => 'Blake Johnson'
+    #     }
+    #   }
+    #   auth = ActiveSupport::HashWithIndifferentAccess.new(auth)
+    #   @request.env['omniauth.auth'] = auth
+    #   get :create
+    #   expect(@request.session[:user_id]).to eq(1)
+    # end
 
     it "create the user correctly" do
       name = 'Blake Johnson'
