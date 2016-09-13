@@ -4,8 +4,6 @@ class WelcomeController < ApplicationController
   end
 
   def profile
-    binding.pry
-    @user =
     if session[:user_id].present?
       @user = User.find_by(id: session[:user_id])
     else

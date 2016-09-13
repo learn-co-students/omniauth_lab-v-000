@@ -1,3 +1,11 @@
+# == Route Map
+#
+#                 Prefix Verb URI Pattern                       Controller#Action
+#                   root GET  /                                 welcome#home
+# auth_facebook_callback GET  /auth/facebook/callback(.:format) sessions#create
+#                profile GET  /profile(.:format)                welcome#profile
+#
+
 Rails.application.routes.draw do
   root 'welcome#home'
   get '/auth/facebook/callback', to: 'sessions#create'
