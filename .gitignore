@@ -10,7 +10,6 @@
 config/secrets.yml
 config/secrets_bk.yml
 config/initializers/omniauth.rb
-config/initializers/omniauth_bk.rb
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
