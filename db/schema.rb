@@ -11,6 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20161011112541) do
+
+  create_table "users", force: :cascade do |t|
+    t.string  "email"
+    t.string  "name"
+    t.integer "uid",   limit: 8
+  end
+
+  add_index "users", ["uid"], name: "index_users_on_uid", unique: true
 
 end
