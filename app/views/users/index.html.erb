@@ -1,0 +1,12 @@
+<h1>All Users</h1>
+
+<% @users.each do |user| %>
+
+<%= user.name %><br><br>
+<%= user.email %><br>
+<%= user.provider %><br>
+<%= user.image %><br>
+<%= user.uid %><br>
+<%= user.created_at %><br>
+<%= user.updated_at %>
+<% end %>
