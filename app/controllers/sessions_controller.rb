@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
     end
     session[:user_id] = user.try(:id)
   end
-
   def auth
     request.env['omniauth.auth']
   end
