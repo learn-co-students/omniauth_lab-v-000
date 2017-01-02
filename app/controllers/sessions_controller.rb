@@ -3,8 +3,10 @@ class SessionsController < ApplicationController
     @user = User.find_or_create_by(uid: auth[:uid])
     @user.name = auth['info']['name']
     @user.email = auth['info']['email']
+    @user.save
 
     session[:user_id] = @user.id
+    redirect_to root_path
   end
 
   def auth
