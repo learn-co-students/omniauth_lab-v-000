@@ -6,7 +6,7 @@ RSpec.describe SessionsController, type: :controller do
     User.destroy_all
   end
 
-  let(:user) {User.create(:name => "Blake Johnson", :uid => 1234567
+  let(:user) {User.create(:name => "Blake Johnson", :uid => 1234567, password: "123", provider: "facebook"
     )}
 
   describe 'get create' do
