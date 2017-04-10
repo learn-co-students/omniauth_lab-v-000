@@ -1,4 +1,7 @@
 class WelcomeController < ApplicationController
-  def home
-  end
+    def home
+        if logged_in?
+            render "sessions/create"    
+        end
+    end
 end
