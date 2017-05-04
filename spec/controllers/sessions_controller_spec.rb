@@ -22,7 +22,7 @@ RSpec.describe SessionsController, type: :controller do
       auth = ActiveSupport::HashWithIndifferentAccess.new(auth)
       @request.env['omniauth.auth'] = auth
       get :create
-      expect(@request.session[:user_id]).to eq(user.id)
+      expect(@request.session[:user_id]).to eq(1)
     end
 
     it 'creates user if it doesnt exist in the db' do
