@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  root 'welcome#home'
+  get '/signup' => 'users#new'
+  post '/signup' => 'users#create'
   get '/auth/facebook/callback' => 'sessions#create'
   get '/hello' => 'welcome#hello'
+  root 'users#new'
 
 
 

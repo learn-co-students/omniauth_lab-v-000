@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'tux'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pry'
