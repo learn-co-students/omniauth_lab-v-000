@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'sessions/create'
 
   get '/auth/facebook/callback', to: 'sessions#create'
 
