@@ -23,6 +23,9 @@ RSpec.describe SessionsController, type: :controller do
       @request.env['omniauth.auth'] = auth
       get :create
       expect(@request.session[:user_id]).to eq(user.id)
+
+      # user = User.find_by(:id => @request.session[:user_id])
+      # expect(user.email).to eq(auth[:info][:email])
     end
 
     it 'creates user if it doesnt exist in the db' do
