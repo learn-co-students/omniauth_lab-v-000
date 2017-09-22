@@ -1,0 +1,893 @@
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 18:08:49 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 994ms (Views: 984.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.4.178.20 at 2017-09-21 18:08:50 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.4.178.20 at 2017-09-21 18:08:50 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.4.178.20 at 2017-09-21 18:08:50 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 24.4.178.20 at 2017-09-21 18:08:50 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.4.178.20 at 2017-09-21 18:08:50 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-21 18:08:54 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.2ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 19:59:48 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1483ms (Views: 1419.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 19:59:53 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-21 19:59:56 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.9ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:00:24 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-21 20:00:26 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.9ms)
+  [1m[36m (57.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (7.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to Users (20170921201010)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uid" varchar, "name" varchar) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170921201010"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:11:43 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+    <% if session[:user_id] %>
+     ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <% if session[:user_id] %>
+                 ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  <h2>Email: <%= @user.email %></h2>
+                      ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  <h2>Facebook UID: <%= @user.uid %></h2>
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  <h2>Facebook UID: <%= @user.uid %></h2>
+                   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+<% else %>
+ ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:10: unterminated string meets end of file):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:10: unterminated string meets end of file
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.7ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:12:09 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+    <% if session[:uid] %>
+     ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <% if session[:uid] %>
+                 ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  <h2>Email: <%= @user.email %></h2>
+                      ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  <h2>Facebook UID: <%= @user.uid %></h2>
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  <h2>Facebook UID: <%= @user.uid %></h2>
+                   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+<% else %>
+ ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:10: unterminated string meets end of file):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:10: unterminated string meets end of file
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.1ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:12:35 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+    <% if session[:uid] %>
+     ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <% if session[:uid] %>
+                 ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  <h2>Email: <%= @user.email %></h2>
+                      ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  <h2>Facebook UID: <%= @user.uid %></h2>
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  <h2>Facebook UID: <%= @user.uid %></h2>
+                   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+<% else %>
+ ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:10: unterminated string meets end of file):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:10: unterminated string meets end of file
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:13:13 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+    <% if session[:user_id] %>
+     ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <% if session[:user_id] %>
+                 ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  <h2>Email: <%= @user.email %></h2>
+                      ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  <h2>Facebook UID: <%= @user.uid %></h2>
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  <h2>Facebook UID: <%= @user.uid %></h2>
+                   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+<% else %>
+ ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:10: unterminated string meets end of file):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:10: unterminated string meets end of file
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (56.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:16:44 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+    <% if session[:user_id] %>
+     ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <% if session[:user_id] %>
+                 ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  <h2>Email: <%= @user.email %></h2>
+                      ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  <h2>Facebook UID: <%= @user.uid %></h2>
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  <h2>Facebook UID: <%= @user.uid %></h2>
+                   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+<% else %>
+ ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:10: unterminated string meets end of file):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:6: syntax error, unexpected tIVAR, expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '<', expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:9: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:10: unterminated string meets end of file
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (63.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.3ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:17:30 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+    <% if session[:user_id] %>
+     ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <% if session[:user_id] %>
+                 ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  <%= link_to('Log in with Facebook!', '/auth/facebook') %>
+             ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:8: syntax error, unexpected '>'):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:8: syntax error, unexpected '>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.1ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:17:33 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+    <% if session[:user_id] %>
+     ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    <% if session[:user_id] %>
+                 ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  <%= link_to('Log in with Facebook!', '/auth/facebook') %>
+             ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:8: syntax error, unexpected '>'):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:8: syntax error, unexpected '>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.0ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:18:08 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  <h1><%= @user.name %></h1>
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  <%= link_to('Log in with Facebook!', '/auth/facebook') %>
+             ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:7: syntax error, unexpected '>'):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/welcome_controller.rb:6: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:7: syntax error, unexpected '>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.4ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:18:19 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  < @user.name 
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:5: syntax error, unexpected '<', expecting keyword_end
+  <% else %>
+   ^
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:5: syntax error, unexpected '>'
+/home/aniqaelahi-19061/code/labs/omniauth_lab-v-000/app/controllers/welcome_controller.rb:6: unterminated string meets end of file):
+  app/controllers/welcome_controller.rb:4: syntax error, unexpected '<'
+  app/controllers/welcome_controller.rb:5: syntax error, unexpected '<', expecting keyword_end
+  app/controllers/welcome_controller.rb:5: syntax error, unexpected '>'
+  app/controllers/welcome_controller.rb:6: unterminated string meets end of file
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (55.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.8ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:18:50 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `link_to' for #<WelcomeController:0x007f3bb924fe40>):
+  app/controllers/welcome_controller.rb:6:in `home'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.4ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-21 20:19:24 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 404ms (Views: 403.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-21 20:19:26 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.3ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 02:22:15 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 696ms (Views: 685.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 02:22:19 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (60.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.5ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 03:52:51 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 431ms (Views: 420.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 03:52:55 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.6ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 03:53:12 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.7ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 03:54:09 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 482ms (Views: 423.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 03:55:15 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 590ms (Views: 579.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 03:55:19 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 03:55:21 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (57.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.9ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 03:56:16 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.3ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:00:53 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 04:01:04 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 665ms (Views: 664.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:01:06 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:01:07 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:01:29 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 04:10:54 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 611ms (Views: 600.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:10:58 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:10:59 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 04:15:23 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 595ms (Views: 584.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:15:28 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:15:28 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 04:18:51 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:18:55 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:18:55 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 04:40:03 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 100ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 04:40:18 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    1: 
+    2: <h2>Welcome, <%= u.name  %></h2>
+    3: <a href='/auth/facebook'>Login with Facebook</a>
+  app/views/welcome/home.html.erb:2:in `_app_views_welcome_home_html_erb__973315208554370268_70013847663740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.6ms)
+
+
+Started GET "/" for 24.4.178.20 at 2017-09-22 04:40:32 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:40:35 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/auth/facebook" for 24.4.178.20 at 2017-09-22 04:40:35 +0000
+Cannot render console from 24.4.178.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
