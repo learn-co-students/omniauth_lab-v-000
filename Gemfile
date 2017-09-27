@@ -24,6 +24,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-facebook'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
