@@ -1,2 +1,4 @@
-<pre><%= JSON.pretty_generate(@auth) %></pre>
-<img src="<%= @auth[:info] && @auth[:info][:image] %>">
+<h1><%= @auth['info']['name'] %></h1>
+<h2>Email: <%= @auth['info']['email'] %></h2>
+<h2>Facebook UID: <%= @auth['uid'] %></h2>
+<img src="<%= @auth['info']['image'] %>">
