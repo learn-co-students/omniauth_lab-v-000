@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Let's implement all the knowledge we've just gained about OAuth and Omniauth. In this lab we'll be allowing users to log in via Facebook. Because we have no control over Facebook, the tests can't ensure that Facebook responds correctly, so you might have issues on the Facebook side if you haven't set up everything exactly as explained in the README. We'll be testing that everything on our server's side is configured correctly and that, assuming that Facebook gives us the correct response, we can log the user in.
+Let's implement all the knowledge we've just gained about OAuth and Omniauth. In this lab we'll be allowing users to log in via Facebook. Because we have no control over Facebook, the tests can't ensure that Facebook responds correctly, so you might have issues on the Facebook side if you haven't set up everything exactly as explained in the README. We'll be testing that everything on our server's side is configured correctly and that, assuming that Facebook gives us the correct response, we can log the user in. If you do not have a Facebook account, you can use the dummy Facebook key and secret used in the [Omniauth Readme](https://learn.co/tracks/full-stack-web-development-v3/rails/authentication/omniauth).
 
 ## Instructions
 
