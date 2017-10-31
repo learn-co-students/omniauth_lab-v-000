@@ -1,2 +1,2 @@
-<%= render_info(@user) %>
+<%= render partial: 'welcome/user_info', locals: {user: @user} %>
 <a href='/auth/facebook'>Login with Facebook</a>
