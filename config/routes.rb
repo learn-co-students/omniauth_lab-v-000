@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   root 'welcome#home'
+   #To handle user sessions, we need to create a single route, 
+  #sessions#create, which is where Facebook will redirect 
+  #users in the callback phase of the login process. 
+  #Add the following to config/routes.rb:
+  get '/auth/facebook/callback' => 'sessions#create'
 
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
