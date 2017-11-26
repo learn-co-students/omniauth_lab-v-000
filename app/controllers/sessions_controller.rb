@@ -1,16 +1,19 @@
 class SessionsController < ApplicationController
   def create
   	@user = User.find_or_create_from_auth_hash(auth_hash)
-  	current_user = @user.uid
+  	# byebug
+  	session[:user_id] = @user.id
+  	# byebug
   	redirect_to '/'
   end
 
   def logout
-  	session.delete
+  	session
   	redirect_to root_path
   end
 
-  private
+  
+ private
 
   def auth_hash
   	request.env['omniauth.auth']
