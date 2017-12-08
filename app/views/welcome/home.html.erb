@@ -1,1 +1,10 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<%# binding.pry %>
+<% if current_user %>
+    <h3> Welcome, <%= current_user.name %>! </h3>
+    <p> <%= form_for(:user, :controller => "sessions", :action => "destroy") do |f| %> 
+            <%= f.submit "Logout" %>
+        <% end %>
+    </p>
+<% else %>
+    <a href='/auth/facebook'>Login with Facebook</a>
+<% end %>
