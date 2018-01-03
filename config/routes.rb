@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   root 'welcome#home'
 
-  
-  # The priority is based upon order of creation: first created -> highest priority.
+  get '/login' => "sessions#new"
+  post '/sessions' => "sessions#create"
+  get '/logout' => "sessions#destroy"
+  get '/auth/:provider/callback' => 'sessions#create'  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
