@@ -1,15 +1,13 @@
 class SessionsController < ApplicationController
     
     def create 
-    @user = User.find_or_create_by(uid: auth['uid']) do |u|
-      u.name = auth['info']['name']
-      u.email = auth['info']['email']
-      u.image = auth['info']['image']
+    @user = User.find_or_create_by(uid: auth['uid']) do |user|
+      user.name = auth['info']['name']
+      user.email = auth['info']['email']
+      user.image = auth['info']['image']
     end
     
     session[:user_id] = @user.id
-    
-    redirect_to root_path
 end
 
     def auth 
