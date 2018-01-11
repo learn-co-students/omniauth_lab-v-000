@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 Gemfile.lock
+
+# Ignore ENV hash
+/.env
