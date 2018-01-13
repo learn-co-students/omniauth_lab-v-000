@@ -25,6 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#Use Omniauth for facebook login
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+#Use dotenv-rails to set ENV variable
+gem 'dotenv-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
