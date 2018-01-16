@@ -1,1 +1,10 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+
+
+<!-- displays all the widgets -->
+
+
+<% if session[:user_id] %>
+  <h2>Facebook UID: <%= @user.uid %></h2>
+<% else %>
+  <a href='/auth/facebook'>Login with Facebook</a>
+<% end %>
