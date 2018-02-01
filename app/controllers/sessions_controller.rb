@@ -6,9 +6,7 @@ class SessionsController < ApplicationController
       u.email = auth['info']['email']
       u.image = auth['info']['image']
     end
-    # require 'pry'; binding.pry
     session[:user_id] = @user.id
-    @auth = auth['info']
   end
   
   def destroy
