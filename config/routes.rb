@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   root 'welcome#home'
 
+  get '/login' => 'sessions#new'
+  post '/sessions' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/auth/facebook/callback' => 'sessions#create'
+
+  resources :users, :only => [:new, :create]
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
