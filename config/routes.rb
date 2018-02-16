@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'sessions/get'
+
+  get 'sessions/create'
+
   root 'welcome#home'
 
   
