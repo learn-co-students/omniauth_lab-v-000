@@ -2,11 +2,11 @@ require 'test_helper'
 
 class SessionsControllerTest < ActionController::TestCase
   test 'gets created, assigns omniauth auth data to @auth' do
-    auth = {      
+    auth = {
       here: 'is',
       some: 'auth',
       data: '.',
-      provider: 'facebook',
+      provider: 'github',
     }
     @request.env['omniauth.auth'] = auth
     get :create
