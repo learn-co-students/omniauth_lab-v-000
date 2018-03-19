@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   root 'welcome#home'
 
   
@@ -56,4 +57,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get "auth/facebook/callback" => "sessions#create"
+  get "/logout" => "sessions#destroy"
 end

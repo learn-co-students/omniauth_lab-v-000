@@ -1,1 +1,6 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<% if @user %>
+  <h2>Welcome, <%= @user.name %></h2>
+  <%= link_to "Log Out", "/logout" %>
+<% else %>
+  <a href='/auth/facebook'>Login with Facebook</a>
+<% end %>
