@@ -1,0 +1,40 @@
+Omniauth setup for facebook
+
+setup gemfile
+        gem 'omniauth'
+        gem 'omniauth-facebook'
+        gem 'dotenv-rails'
+        #ADDED under group :development, :test do
+                # Access an IRB console on exception pages or by using <%= console %> in views
+                gem 'web-console', '~> 2.0'
+
+Next, we'll need to tell OmniAuth about our app's OAuth credentials. Create a file named config/initializers/omniauth.rb. It will contain the following lines:
+
+            Rails.application.config.middleware.use OmniAuth::Builder do
+              provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
+            end
+
+      Log in to the Facebook developer site. In the My Apps dropdown menu at the top-right of the page, select Add a New App, and a modal should appear. Fill out the requested information and click Create App ID. You should now be on the Product Setup page — if you are not, look in the sidebar for + Add Product under the Products heading. On the Product Setup page, click Get Started next to Facebook Login:
+
+        Facebook Login
+
+      Choose the Web option, and enter http://localhost:3000/ when it prompts you for your Site URL. Click Save, and then click on Settings under the Facebook Login heading in the sidebar:
+
+        Facebook Login Settings
+
+      In the Valid OAuth redirect URIs field, enter localhost:3000/auth/facebook/callback, which is the default callback endpoint for the omniauth-facebook strategy:
+
+        Valid OAuth redirect URIs
+
+      Click Save Changes, and then click on Dashboard in the sidebar. Keep the page handy because we'll need those App ID and App Secret values in a minute, but first...
+
+Add dotenv-rails to your Gemfile and bundle install.
+Create a file named .env at the root of your application (in this case, inside the omniauth_readme/ directory).
+Add your Facebook app credentials to the newly created .env file
+Add .env to your .gitignore file to ensure that you don't accidentally commit your precious credentials.
+For step three, take the App ID and App Secret values from the Facebook app dashboard... Facebook App Dashboard
+
+...and paste them into the .env file as follows:
+
+FACEBOOK_KEY=247632982388118
+FACEBOOK_SECRET=01ab234567890c123d456ef78babc901
