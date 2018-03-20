@@ -38,3 +38,7 @@ For step three, take the App ID and App Secret values from the Facebook app dash
 
 FACEBOOK_KEY=247632982388118
 FACEBOOK_SECRET=01ab234567890c123d456ef78babc901
+
+To handle user sessions, we need to create a single route, sessions#create, which is where Facebook will redirect users in the callback phase of the login process. Add the following to config/routes.rb:
+
+      get '/auth/facebook/callback' => 'sessions#create'
