@@ -4,9 +4,10 @@ setup gemfile
         gem 'omniauth'
         gem 'omniauth-facebook'
         gem 'dotenv-rails'
-        #ADDED under group :development, :test do
-                # Access an IRB console on exception pages or by using <%= console %> in views
-                gem 'web-console', '~> 2.0'
+        #ADDED
+                  # Access an IRB console on exception pages or by using <%= console %> in views
+                  gem 'web-console', group: :development
+                  gem 'pry-rails', :group => :development
 
 Next, we'll need to tell OmniAuth about our app's OAuth credentials. Create a file named config/initializers/omniauth.rb. It will contain the following lines:
 
@@ -42,3 +43,13 @@ FACEBOOK_SECRET=01ab234567890c123d456ef78babc901
 To handle user sessions, we need to create a single route, sessions#create, which is where Facebook will redirect users in the callback phase of the login process. Add the following to config/routes.rb:
 
       get '/auth/facebook/callback' => 'sessions#create'
+
+
+-------------------------------
+
+Create Users table with controller/model
+  rails g model User name:string email:string image:string uid:string --no-test-framework
+
+  rake db:migrate
+
+UsersController file not necessary but created one anyway

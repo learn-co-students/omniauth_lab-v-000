@@ -1,5 +1,7 @@
-class WelcomeController < ApplicationController
+class SessionsController < ApplicationController
       def create
+#binding.pry
+        #raise params.inspect
           #facebook will send back information that will be forwarded from the config/routes file into the create action
           @user = User.find_or_create_by(uid: auth['uid']) do |u|
                 u.name  = auth['info']['name']
