@@ -10,8 +10,15 @@ class SessionsController < ApplicationController
     render 'welcome/home'
   end
 
-  def auth
-    request.env['omniauth.auth']
+  def destroy
+    reset_session
+    render 'welcome/home'
   end
+
+  private
+    def auth
+      request.env['omniauth.auth']
+    end
+
 
 end
