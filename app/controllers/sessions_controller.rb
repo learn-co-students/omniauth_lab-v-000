@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
 
   def new
   end
-  
+
   def create
     user = user.find_by(:email => params[:email])
     if user && user.authenticate(params[:password])
@@ -17,5 +17,11 @@ class SessionsController < ApplicationController
   def destroy
     reset_session
     redirect_to login_path
+  end
+
+  private
+
+  def auth
+    request.env['omniauth.auth']
   end
 end
