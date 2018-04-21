@@ -16,3 +16,7 @@
 !/log/.keep
 /tmp
 Gemfile.lock
+
+# Ignore Facebook App Credentials
+.env
+
