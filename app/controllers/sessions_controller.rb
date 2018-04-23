@@ -1,29 +1,29 @@
 class SessionsController < ApplicationController
 
-  def new
-  end
-
-  def create
-    if request.env["omniauth.auth"]
-      @auth = request.env["omniauth.auth"]
-      @user = User.find_or_create_by(name: @auth["info"]["name"])
-      session[:user_id] = @user.id
-      redirect_to users_path
-    else
-      redirect_to '/'
+	def create
+		
+    @user = User.find_or_create_by(uid: auth['uid']) do |u|
+      u.name = auth['info']['name']
+      u.email = auth['info']['email']
+      u.image = auth['info']['image']
     end
+ 
+    session[:user_id] = @user.id
+ 
+    render 'welcome/home'
   end
+ 
+	def home
+		render 'home.html.erb'
+	end
+	
+	def destroy
+		session.delete :user_id
+		render :goodbye
+	end
 
+	private
   def auth
-    request.env["omniauth.auth"]
-  end
-
-  def home
-    render 'home.html.erb'
-  end
-
-  def destroy
-    session.delete :user_id
-    render :goodbye
+    request.env['omniauth.auth']
   end
 end

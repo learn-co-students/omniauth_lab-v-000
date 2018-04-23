@@ -4,7 +4,4 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :facebook, '1280587901979507', '9c180dfafcc22cc9510e675d7d781f58'
 
   # provider :google, '380403753376-nobl4g1p0s4bu0c44s00cntrhlr1frks.apps.googleusercontent.com', '8OlB5XREUvlXMthQCifQjylS'
-
-
-
 end

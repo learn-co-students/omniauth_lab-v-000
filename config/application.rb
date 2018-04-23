@@ -7,7 +7,11 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module OmniauthLab
-  class Application < Rails::Application
+	class Application < Rails::Application
+		
+		# config.force_ssl = false
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
