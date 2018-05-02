@@ -11,7 +11,6 @@ class SessionsController < ApplicationController
     @auth = auth['info']
 
     render 'sessions/create'
-    # raise request.env["omniauth.auth"].inspect
   end
 
   private 
