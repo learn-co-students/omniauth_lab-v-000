@@ -1,1 +1,8 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<% if session[:user_id] %>
+  <h1><%= @user.name %></h1>
+  <h2>Email: <%= @user.email %></h2>
+<% else %>
+<%= link_to('Log In with this Facebook, it''s the newer link', '/auth/facebook') %>  
+<% end %>
+
+
