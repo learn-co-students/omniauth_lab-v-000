@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get '/auth/:provider/callback' => 'sessions#create'
 
-  resources :users, :session 
+  resources :users, :sessions
 
 
   
