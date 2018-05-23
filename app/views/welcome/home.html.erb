@@ -1,1 +1,5 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<% if session[:user_id] %>
+  <h1>You are logged in, dir="<%=@user.name%>"</h1>
+<%else%>
+  <%= link_to('Login with Facebook','/auth/facebook')%>
+<%end%>
