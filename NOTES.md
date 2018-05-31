@@ -28,16 +28,16 @@ dotenv-rails
 [x]	Add .env to your .gitignore file to ensure that you don't accidentally commit your precious credentials.
 
 
-[] create a link that will initiate the Facebook OAuth process.  [] add one to app/views/welcome/home.html.erb:
-	[] <%= link_to('Log in with Facebook!', '/auth/facebook') %>
-	[] we're going to need a User model and a SessionsController to track users who log in via Facebook. The User model should have four attributes, all strings: name, email, image, and uid (the user's ID on Facebook).
-	[] create a single route, sessions#create, which is where Facebook will redirect users in the callback phase of the login process. 
-	[] Add the following to config/routes.rb:
-		[]	get '/auth/facebook/callback' => 'sessions#create'
+[x] create a link that will initiate the Facebook OAuth process.  [x] add one to app/views/welcome/home.html.erb:
+	[x] <%= link_to('Log in with Facebook!', '/auth/facebook') %>
+	[x] we're going to need a User model and a SessionsController to track users who log in via Facebook. The User model should have four attributes, all strings: name, email, image, and uid (the user's ID on Facebook).
+	[x] create a single route, sessions#create, which is where Facebook will redirect users in the callback phase of the login process. 
+	[x] Add the following to config/routes.rb:
+		[x]	get '/auth/facebook/callback' => 'sessions#create'
 
 	Our SessionsController will be pretty simplistic, with a lone action (and a helper method to DRY up our code a bit):
-	[] class SessionsController < ApplicationController
-	  [] def create
+	[x] class SessionsController < ApplicationController
+	  [x] def create
 	   	 @user = User.find_or_create_by(uid: auth['uid']) do |u|
 	      u.name = auth['info']['name']
 	      u.email = auth['info']['email']
