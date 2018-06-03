@@ -1,0 +1,14 @@
+<%= form_tag ({controller: 'sessions', action: 'create'}) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%=f.text_field :password %>
+  <%= f.text_field :password %>
+
+  <%= f.label :password_confirmation %>
+  <%= f.text_field :password_confirmation %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to('Log in with Facebook!', '/auth/facebook') %>
