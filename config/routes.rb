@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-   # resources :sessions, only: [:new]
+   resources :sessions, only: [:new]
    get '/auth/facebook/callback', to: 'sessions#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
