@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 Gemfile.lock
+
+#Add .env to gitignore so you don't accidentally commit your credentials to Github for the world to see.
+.env
