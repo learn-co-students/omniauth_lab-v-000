@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180809214920) do
+ActiveRecord::Schema.define(version: 20180809224303) do
 
   create_table "users", force: :cascade do |t|
     t.string  "name"
-    t.integer "uid"
+    t.integer "uid",  limit: 8
   end
 
 end
