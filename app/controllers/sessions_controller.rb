@@ -1,15 +1,28 @@
 class SessionsController < ApplicationController
+
   def create
-   @user = User.find_or_create_by(uid: auth['uid']) do |u|
-     u.name = auth['info']['name']
-     u.email = auth['info']['email']
-     u.image = auth['info']['image']
-   end
+   if auth_hash = request.env["omniauth.auth"]
+     oauth_email = request.env["omniauth.auth"]["info"]["email"]
+     oauth_name = request.env["omniauth.auth"]["info"]["name"]
+     binding.pry
+     if user = User.find_by(:email => oauth_email)
+       session[:user_id] = user.id
+     else
+       user = User.create(:email => oauth_email, :name => oauth_name)
+       oauth_email
+       session[:user_id] = user.id
+     end
+   else
+     user = User.find_by(:email => params[:email])
+     if user && user.authenticate(params[:password])
+       session[:user_id] == user.id
+       redirect to root_path
+     else
+       render 'sessions/new'
+     end
+    end
+  end
 
-   session[:user_id] = @user.id
-
-   render 'welcome/home'
- end
 
  private
 
