@@ -43,4 +43,9 @@ group :development, :test do
   gem 'capybara'
 end
 
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'dotenv-rails'
+gem 'pry'
+
 # Access an IRB console on exception pages or by using <%= console %> in views
