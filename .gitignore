@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 Gemfile.lock
+
+# Ignore application keys and secrets
+.env
