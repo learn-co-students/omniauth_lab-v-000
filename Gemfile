@@ -28,6 +28,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server
  gem 'unicorn'
 
+ gem 'thin'
+
 # Use Capistrano for deployment
  gem 'capistrano-rails', group: :development
 
@@ -40,8 +42,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
   gem 'omniauth'
-  gem 'omniauth'
+
   gem 'omniauth-facebook'
+  gem 'dotenv-rails'
 
 end
 
