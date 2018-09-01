@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 Gemfile.lock
+
+# Ignore OAuth env file
+.env
