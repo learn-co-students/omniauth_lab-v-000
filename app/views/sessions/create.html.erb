@@ -1,2 +1,9 @@
-<pre><%= JSON.pretty_generate(@auth) %></pre>
-<img src="<%= @auth[:info] && @auth[:info][:image] %>">
+
+<% if session[:user_id] %>
+  <h1><%= @user.name %></h1>
+  <h2>Email: <%= @user.email %></h2>
+  <h2>ID: <%=@user.uid%></h2>
+  <img src="<%= @user.image %>">
+<% else %>
+<a href='/auth/facebook'>Login with Facebook</a>
+<%end%>
