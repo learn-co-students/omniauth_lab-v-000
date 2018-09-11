@@ -1,4 +1,8 @@
 class WelcomeController < ApplicationController
-  def home
+  helper :application
+
+  def index
+    @user = auth[:info] if auth
   end
+
 end
