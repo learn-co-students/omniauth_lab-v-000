@@ -1,1 +1,14 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<h3> Login with Facebook </h1>
+
+<% if session[:user_id] %>
+  <h1><%= @user.name %></h1>
+  <h2>Email: <%= @user.email %></h2>
+  <h2>Facebook UID: <%= @user.uid %></h2>
+  <img src="<%= @user.image %>">
+<% else %>
+  <%= link_to('Login with Facebook!', '/auth/facebook') %>
+<% end %>
+
+<%= form_tag logout_path do %>
+  <input type=submit value='logout'>
+<% end %>
