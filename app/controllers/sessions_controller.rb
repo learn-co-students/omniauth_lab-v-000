@@ -1,5 +1,3 @@
-# require 'securerandom'
-
 class SessionsController < ApplicationController
 
   def create
@@ -7,33 +5,17 @@ class SessionsController < ApplicationController
       u.name = auth['info']['name']
       u.email = auth['info']['email']
       u.image = auth['info']['image']
-      u.password = SecureRandom.hex
+      u.password = auth['uid']
     end
-    self.current_user = @user
+    session[:user_id] = @user.id
+
     render 'welcome/home'
   end
 
-
-  def current_user
-    @current_user ||= User.find_by_id(session[:user_id])
-  end
-
-  def signed_in?
-   !!current_user
-  end
-
-  helper_method :current_user, :signed_in?
-
-    def current_user=(user)
-      @current_user = user
-      session[:user_id] = user.id
-    end
-
-
-private
+  private
 
   def auth_hash
-    request.env['omniauth.auth']
+    !!request.env["omniauth.auth"]
   end
 
 end
