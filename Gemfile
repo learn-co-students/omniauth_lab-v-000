@@ -26,8 +26,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'dotenv-rails'
 
+
 gem 'omniauth'
 gem 'omniauth-facebook'
+
+gem 'bcrypt'
+>>>>>>> 9665d99accfb815ddee419bdc8f86da7c6ced984
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
