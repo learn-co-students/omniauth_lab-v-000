@@ -28,7 +28,7 @@ gem 'dotenv-rails'
 
 gem 'omniauth'
 gem 'omniauth-facebook'
-=======
+
 gem 'bcrypt'
 
 # Use ActiveModel has_secure_password
