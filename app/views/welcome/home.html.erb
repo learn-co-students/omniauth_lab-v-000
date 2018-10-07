@@ -1,1 +1,5 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<% if logged_in? %>
+    <%= render partial: 'welcome/user_demograph', locals: {user: @user} %>
+<% else %>
+    <a href='/auth/facebook'>Login with Facebook</a>
+<% end %>
