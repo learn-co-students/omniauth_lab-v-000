@@ -12,7 +12,7 @@ RSpec.describe SessionsController, type: :controller do
   describe 'get create' do
     it 'finds user if it exists and logs the user in' do
       auth = {
-        :provider => 'facebook',
+        :provider => 'github',
         :uid => user.uid,
         :info => {
           :email => 'blake@flatironschool.com',
@@ -27,7 +27,7 @@ RSpec.describe SessionsController, type: :controller do
 
     it 'creates user if it doesnt exist in the db' do
       auth = {
-        :provider => 'facebook',
+        :provider => 'github',
         :uid => '1234567',
         :info => {
           :email => 'blake@flatironschool.com',
@@ -43,7 +43,7 @@ RSpec.describe SessionsController, type: :controller do
     it "create the user correctly" do
       name = 'Blake Johnson'
       auth = {
-        :provider => 'facebook',
+        :provider => 'github',
         :uid => '1234567',
         :info => {
           :email => 'blake@flatironschool.com',
