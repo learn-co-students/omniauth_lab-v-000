@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20181105191516) do
 
   create_table "users", force: :cascade do |t|
-    t.integer  "uid"
+    t.string   "uid"
     t.string   "name"
     t.string   "email"
     t.string   "image"
