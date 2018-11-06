@@ -1,1 +1,5 @@
 <a href='/auth/facebook'>Login with Facebook</a>
+
+<% if session[:user_id] %>
+  <%= @user.name %>
+<% end %>
