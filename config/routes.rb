@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+  resources :sessions, only: %i[create destroy]
   root 'welcome#home'
+
+  get '/auth/facebook/callback' => 'sessions#create'
+  post '/logout', to: 'sessions#destroy'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
