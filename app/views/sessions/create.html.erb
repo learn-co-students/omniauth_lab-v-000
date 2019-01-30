@@ -1,2 +1,11 @@
 <pre><%= JSON.pretty_generate(@auth) %></pre>
 <img src="<%= @auth[:info] && @auth[:info][:image] %>">
+
+
+<h3> <%=@user.name %> </h3>
+<ul>
+  <li>
+    <%= @user.email %>
+  </li>
+</ul>
+ 
