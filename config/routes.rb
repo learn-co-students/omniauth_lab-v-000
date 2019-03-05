@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  resources :sessions, only: [:new, :create, :destroy]
+#  get 'sessions/new'
+#  post 'sessions/create' => 'sessions#create'
+
   root 'welcome#home'
 
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
