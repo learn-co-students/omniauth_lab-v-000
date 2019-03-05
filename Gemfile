@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~>1.3.6'
 # Used to mock an https url
@@ -41,6 +41,10 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
+  gem 'omniauth'
+  gem 'omniauth-facebook'
+  gem 'dotenv-rails'
+  gem 'pry'
 end
 
 # Access an IRB console on exception pages or by using <%= console %> in views
