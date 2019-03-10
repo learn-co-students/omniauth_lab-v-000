@@ -11,17 +11,11 @@ class SessionsController < ApplicationController
     end
 
     session[:user_id] = @user.id
-
-    render 'welcome/home'
-
-    private
-
-    def auth
-      request.env['omniauth.auth']
-    end
   end
 
-  def destroy_all
+  private
 
+  def auth
+    request.env['omniauth.auth']
   end
 end
