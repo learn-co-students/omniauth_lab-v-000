@@ -2,6 +2,9 @@
 
 .DS_Store
 
+#dotenv-rails
+.env
+
 ### Node ###
 # Logs
 logs
