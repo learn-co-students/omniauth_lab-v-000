@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'pry'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'rb-readline', '~> 0.5.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 gem 'bootsnap'
