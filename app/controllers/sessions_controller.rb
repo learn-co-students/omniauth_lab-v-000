@@ -3,14 +3,13 @@ class SessionsController < ApplicationController
   def create
 
     user = User.find_or_create_by(uid: auth['uid']) do |user|
-
+      binding.pry
       user.email = auth['info']['email']
       user.name = auth['info']['name']
     end
     if User.exists?(user.uid)
       user
     else
-      binding.pry
       user.save!
       user
     end
