@@ -23,4 +23,4 @@ As of March 2018, Facebook now requires secure (https) app urls. If you would li
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/omniauth_lab' title='Omniauth Lab'>Omniauth Lab</a> on Learn.co and start learning to code for free.</p>
 
-DONE!
+DONE! Done!
