@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 
     def create
         @user = User.find_or_create_by(name: auth_hash[:info][:name])
-        byebug
+        
             @user.uid = auth_hash[:uid]
         if @user.save
             session[:user_id] = @user.id
