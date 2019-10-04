@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
             u.image = auth['info']['image']
         end
         session[:user_id] = @user.id
-
+        #was finding more than one user so we needed to delete the sqlite test and learn again
         render 'welcome/home'
     end
 
