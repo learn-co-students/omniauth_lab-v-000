@@ -1,1 +1,11 @@
-<a href='/auth/facebook'>Login with Facebook</a>
+<% if session[:user_id] %>
+  <h1><%= @user.name %></h1>
+  <h2>Facebook UID: <%= @user.uid %></h2>
+
+  <%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+    <input type=submit value='logout'>
+  <% end %>
+
+<% else %>
+  <a href='/auth/facebook'>Login with Facebook</a>
+<% end %>
