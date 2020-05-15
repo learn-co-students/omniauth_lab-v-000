@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'welcome#home'
   get '/auth/facebook/callback' => 'sessions#create'
+  get '/auth/github/callback' => 'sessions#create'
+  match '/auth/developer/callback', to: 'sessions#create', via: [:get, :post]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
