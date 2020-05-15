@@ -1,8 +1,14 @@
-<% if session[:user_id] %>
-  <h1><%= @user.name %></h1>
-  <h2>Email: <%= @user.email %></h2>
-  <h2>Facebook UID: <%= @user.uid %></h2>
-  <img src="<%= @user.image %>">
+<% if name = session[:name] %>
+  <p>Welcome <%= name -%>! We know who you are thanks to Omniauth!</p>
+  <p>You were authenticated by  <%= session[:omniauth_data]['provider'] %></p>
+
+  The raw data returned from Omniauth were:
+  <pre>
+    <%= session[:omniauth_data] %>
+  </pre>
 <% else %>
-  <%= link_to('Log in with Facebook!', '/auth/facebook') %>
+  <p>No authentication information is available.</p>
+  <p>Try <%= link_to 'Signing in with the Developer strategy', '/auth/developer'%>.</p>
+  <p>Try <%= link_to 'Signing in with the Facebook strategy', '/auth/facebook'%>.</p>
+  <p>Try <%= link_to 'Signing in with the Github strategy', '/auth/github'%>.</p>
 <% end %>
