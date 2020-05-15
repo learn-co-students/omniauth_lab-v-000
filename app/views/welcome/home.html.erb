@@ -1,5 +1,5 @@
-<% if name = session[:name] %>
-  <p>Welcome <%= name -%>! We know who you are thanks to Omniauth!</p>
+<% if @name = session[:name] %>
+  <p>Welcome <%= @name -%>! We know who you are thanks to Omniauth!</p>
   <p>You were authenticated by  <%= session[:omniauth_data]['provider'] %></p>
 
   The raw data returned from Omniauth were:
@@ -9,6 +9,6 @@
 <% else %>
   <p>No authentication information is available.</p>
   <p>Try <%= link_to 'Signing in with the Developer strategy', '/auth/developer'%>.</p>
-  <p>Try <%= link_to 'Signing in with the Facebook strategy', '/auth/facebook'%>.</p>
+  <p>Try <%= link_to 'Login with Facebook', '/auth/facebook'%>.</p>
   <p>Try <%= link_to 'Signing in with the Github strategy', '/auth/github'%>.</p>
 <% end %>

@@ -1,8 +1,11 @@
 class SessionsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: :create
   def create
-    session[:name] = auth['info']['name']
+    @name = auth['info']['name']
     session[:omniauth_data] = auth
+
+    user = User.find_or_create_by(name:@name, uid:auth['uid'])
+    session[:user_id] = user.id
 
     redirect_to root_path
   end
