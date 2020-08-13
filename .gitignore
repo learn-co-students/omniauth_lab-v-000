@@ -48,4 +48,4 @@ jspm_packages
 /config/master.key
 
 #Ignore .env file
-/.env
+.env
