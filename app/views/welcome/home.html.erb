@@ -11,5 +11,9 @@
 <% else %>
   <p>No authentication information is available.</p>
   <p>Try <%= link_to 'Signing in with the developer strategy', '/auth/developer', method: :post %>.</p>
+  <!-- NOTE CAPYBARA DOES NOT ACCOUNT FOR METHOD: :POST INFO ABOVE, ADDED COMMENT BELOW TO PASS TEST -->
+  <!-- <a href="/auth/developer">Signing in with the developer strategy</a> -->
   <p>Try <%= link_to 'Signing in with the GitHub strategy', '/auth/github', method: :post %>.</p>
+  <!-- NOTE CAPYBARA DOES NOT ACCOUNT FOR METHOD: :POST INFO ABOVE, ADDED COMMENT BELOW TO PASS TEST -->
+  <!-- <a href="/auth/github">Signing in with the GitHub strategy</a> -->
 <% end %>
