@@ -1,5 +1,4 @@
 {
   "name": "omniauth_lab",
-  "private": true,
-  "dependencies": {}
+  "private": true
 }
